@@ -63,10 +63,15 @@ print(2 * 3 ** 3 * 4)
 
 
 # 8) What is a text editor
-
+# Answer: A text editor is a software that can edit plain text and usually has no special
+# formatting features 
 
 # 9) What is Python?
+# Answer: Python is a general purpose coding language that is used in a variety of fields and emphasizes
+# code readibility
 
-
-# 10)What is jupyter notebook, what type of python environment is it, and what alternatives
+# 10) What is jupyter notebook, what type of python environment is it, and what alternatives
 # are there to jupyter notebook?
+# Answer: Jupyter is an open source software that is used in a teaching environment where kernels are
+# used to compile and run code that is readable and well documented.
+# Other alternatives include: PyCharm, Apache Zeppelin, RStudio, and several others
