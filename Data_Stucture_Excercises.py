@@ -1,6 +1,7 @@
 # Data Structures Excersises
 
 # Exercises 1)
+from audioop import reverse
 import math
 
 def main():
@@ -42,8 +43,7 @@ def combine_list_evenNodd(list1, list2):
     longest_list_length = 0
 
     # longest_list_length 
-    list1_length = len(list1)
-    list2_length = len(list2)
+    list1_length, list2_length = len(list1), len(list2)
     longest_list_length = 0 
     if list1_length > list2_length:
         longest_list_length = list1_length
@@ -60,25 +60,22 @@ def combine_list_evenNodd(list1, list2):
     return stitches_list
 
 
-# Exercise 4.
-# Slice a list into 3 equal parts and reverse each list
-def reverse_divideTo(lst, num_of_sections):
+# Exercise 4.  
+def reverse_divideTo():
+    return True
+
+
+def reverse_list(lst):
     original_list = lst
-    divided_list = []
-    list_total_length = len(lst)
-    sections = num_of_sections
-    temp_section_list = []
-
-    for i in num_of_sections:
-        
-
-
-
-
-
-
-
+    reversed_list = []
+    n_count = len(original_list) - 1
     
+    while n_count > -1:
+        reversed_list.append(original_list[n_count])
+        n_count -= 1
+        
+    return reversed_list
+
 
 if __name__ == "__main__":
     main()
