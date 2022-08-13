@@ -15,7 +15,7 @@ def main():
     print(combine_list_evenNodd(list1, list2))
 
     sample_list = [11, 45, 8, 23, 14, 12, 78, 45, 89]
-    print(reverse_divideTo(sample_list, 2))
+    print(reverse_divideTo(sample_list, 3))
     
 
 # Exercise 1
@@ -61,8 +61,23 @@ def combine_list_evenNodd(list1, list2):
 
 
 # Exercise 4.  
-def reverse_divideTo():
-    return True
+def reverse_divideTo(original_list, num_of_sections):
+    og_list, sections = original_list, num_of_sections
+    new_list = []
+    temp_list = []
+    section_length = len(og_list)/sections
+    sect_count = 0
+
+    for ele in og_list:
+        temp_list.append(ele)
+        sect_count += 1
+
+        if sect_count == section_length:
+            sect_count = 0
+            new_list.append(reverse_list(temp_list))
+            temp_list = []
+
+    return new_list
 
 
 def reverse_list(lst):
