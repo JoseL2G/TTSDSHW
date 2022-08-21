@@ -16,6 +16,10 @@ def main():
 
     sample_list = [11, 45, 8, 23, 14, 12, 78, 45, 89]
     print(reverse_divideTo(sample_list, 3))
+
+    rollNumber = [47, 64, 69, 37, 76, 83, 95, 97]
+    sampleDict ={'Zach':47, 'Emma':69, 'Kelly':76, 'Jason':97}
+    print(check_list_in_dict_keys(rollNumber, sampleDict))
     
 
 # Exercise 1
@@ -90,6 +94,16 @@ def reverse_list(lst):
         n_count -= 1
         
     return reversed_list
+
+
+#Exercise 5. 
+def check_list_in_dict_keys(list1, dict1):
+    nums_present_in_dict = []
+
+    for i,v in enumerate(dict1.values()):
+        if v in list1: nums_present_in_dict.append(v)
+
+    return nums_present_in_dict
 
 
 if __name__ == "__main__":
